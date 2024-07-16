@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: 100%;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    color: #fff;
+    margin: 20px;
+    font-size: 40px;
+}
+
+
+#back-img {
+    display: flex;
+    flex-direction: column;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    color: #fff;
+    cursor: url('./batman-8-48.ico') 16 16, auto;
+    
+}
+
+#card-fotos-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fotos {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    align-items: center;
+    background-position: 50% 50%;
+    transition: .5s;
+}
+
+.card-1 {
+    background-image: url('https://mrwallpaper.com/images/hd/the-batman-2022-batmobile-v45f3jv6abhutx4f.jpg');
+}
+
+.card-2 {
+    background-image: url('https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2022/11/Robert-Pattinson-2022-The-Batman-Batmobile.jpg');
+}
+
+.card-3 {
+    background-image: url('https://c.wallhere.com/photos/64/95/Batman_Arkham_Knight_Rocksteady_Studios_Batman_Gotham_City_video_games_Looking_into_the_distance-206560.jpg!d');
+    height: 850px;
+    width: 1900px;    
+}
+
+#card-fotos-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card-4 {
+    background-image: url('https://nervesquidpilot.com/wp-content/uploads/2022/03/untitled_artwork-1.jpg');
+}
+
+.card-5 {
+    background-image: url('https://filmeseseriesonline2021.wordpress.com/wp-content/uploads/2022/03/assistir-the-batman-2022-dublado-online.jpg');
+}
+
+.card-6 {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3f3ab4d8-744f-450a-9e4e-1bd856647c76/df2rlis-adb60292-c0e4-4b30-b05c-d42493011d4c.jpg/v1/fill/w_1280,h_1657,q_75,strp/the_batman_2022_by_mmartinezart_df2rlis-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTY1NyIsInBhdGgiOiJcL2ZcLzNmM2FiNGQ4LTc0NGYtNDUwYS05ZTRlLTFiZDg1NjY0N2M3NlwvZGYycmxpcy1hZGI2MDI5Mi1jMGU0LTRiMzAtYjA1Yy1kNDI0OTMwMTFkNGMuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.7HLnJv68Q6kmC6HigNzpAz750B42DiFUh8nFw8DvEm8');
+}
+
+.card-7 {
+    background-image: url('https://comodonerd.com.br/wp-content/uploads/2021/10/batman1.png');
+    height: 1080px;
+    width: 1900px;
+}
+
+.fotos:hover{
+    transform: scale(1.02);
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+
+    footer {
+        margin-top: 10px;
+    }
+
+    .footer-navigation {
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #back-img {
+        margin: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        height: auto;
+    }
+
+    #card-fotos-1 { 
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        width: auto;
+    }
+
+    #card-fotos-2 { 
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: none;
+        width: auto;
+    }
+
+    .fotos {
+        width: auto;
+        height: 600px;
+    }
+
+}
