@@ -59,6 +59,7 @@ li:hover {
 }
 
 .content {
+    
     width: 60%;
     display: flex;
     align-items: center;
@@ -67,6 +68,7 @@ li:hover {
 
 .trailer {
     width: 50%;
+ 
 }
 
 #sinopse {
@@ -201,11 +203,12 @@ span {
 
     #banner {
         background-position: 40%;
+        width: 100%;
     }
 
     #trailer-container {
         width: 100%;
-        height: 400px;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
@@ -227,8 +230,9 @@ span {
         justify-content: space-between;
     }
 
-    .description {
+    .discription {
         width: 100%;
+        text-align: center;
     }
 
     .button{
@@ -236,8 +240,7 @@ span {
         margin-top: 30px;
     }
 
-    .cards-content{
+        .cards-content{
         grid-template-columns: 1fr;
-        margin-top: 150px;
     }
 }
